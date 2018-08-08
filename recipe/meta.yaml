@@ -27,6 +27,7 @@ requirements:
     - automake
     - libtool
     - bison
+    - alsa-lib
   host:
     - python
     - pip
