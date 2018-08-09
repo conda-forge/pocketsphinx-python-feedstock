@@ -27,7 +27,7 @@ requirements:
     - automake
     - libtool
     - bison
-    - alsa-lib
+    - asoundlib
   host:
     - python
     - pip
