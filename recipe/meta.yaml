@@ -1,5 +1,5 @@
 {% set name = "pocketsphinx-python" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/bambocher/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: d56244340161847cd978fdf9aba0d477bf5f99fcb3019f5b10dea921d078e23a 
+    sha256: 851367ff5b854ef84328c76c95f2617df104a7db6c9350a728bbbbcc6130b5d6
   - url: https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
     sha256: ef5bb5547e2712bdf571f256490ef42a47962033892efd9d7df8eed7fe573ed9
     folder: deps/pocketsphinx
