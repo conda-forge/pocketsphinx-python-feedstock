@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/bambocher/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: d56244340161847cd978fdf9aba0d477bf5f99fcb3019f5b10dea921d078e23a 
+    sha256: d56244340161847cd978fdf9aba0d477bf5f99fcb3019f5b10dea921d078e23a
   - url: https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
     sha256: ef5bb5547e2712bdf571f256490ef42a47962033892efd9d7df8eed7fe573ed9
     folder: deps/pocketsphinx
@@ -17,7 +17,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: False
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
