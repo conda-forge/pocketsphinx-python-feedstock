@@ -16,7 +16,7 @@ source:
     folder: deps/sphinxbase
 
 build:
-  number: 0
+  number: 1
   skip: False
   script: python -m pip install --no-deps --ignore-installed .
 
