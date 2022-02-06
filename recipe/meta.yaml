@@ -1,5 +1,5 @@
 {% set name = "pocketsphinx-python" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/bambocher/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: d56244340161847cd978fdf9aba0d477bf5f99fcb3019f5b10dea921d078e23a 
+    sha256: 09b784be9b683e3b7a37e0d2da00cd37c223a1ec5d5bb4df254498b5f6b64848
   - url: https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
     sha256: ef5bb5547e2712bdf571f256490ef42a47962033892efd9d7df8eed7fe573ed9
     folder: deps/pocketsphinx
@@ -17,8 +17,8 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
-  script: python -m pip install --no-deps --ignore-installed .
+  skip: true  # [win]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -42,7 +42,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Pocketsphinx is a part of the CMU Sphinx Open Source Toolkit For Speech Recognition.'
+  summary: Pocketsphinx is a part of the CMU Sphinx Open Source Toolkit For Speech Recognition.
 
   description: |
     This package provides a python interface to CMU Sphinxbase and Pocketsphinx
